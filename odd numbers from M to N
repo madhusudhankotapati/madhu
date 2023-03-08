@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int n,M,N;
+	printf("enter odd number in a given ramge M to N:\n");
+	scanf("%d%d",&M,&N);
+	for(n=M;n<=N;n++)
+	{
+		if(n%2==1)
+		printf("\n %d",n);
+	}
+	return 0;
+}
