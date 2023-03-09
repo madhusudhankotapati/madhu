@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],size,i,min,min_position,max,max_position;
+	printf("enter the size of an array:");
+	scanf("%d",&size);
+	printf("enter%d elements of an array,size");
+	for(i=0;i<size;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	min=a[0];
+	max=a[0];
+	for(i=1;i<size;i++)
+	{
+		if(min>a[i])
+		{
+			min=a[i];
+			min_position=i;
+		}
+		if(max<a[i])
+		{
+			max=a[i];
+		     max_position=i;
+		 }
+	}
+	printf("\n smallest element in an array=%d",min);
+	printf("\n index position of smallest element=%d",min_position);
+	printf("\n largest element in an array =%d",max);
+	printf("\n index position of the largest number=%d",max_position);
+	return 0;
+}
